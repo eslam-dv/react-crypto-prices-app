@@ -33,7 +33,7 @@ export const Coin = () => {
       <section className="container">
         {loading ? (
           <p className="loading">Loading...</p>
-        ) : coin ? (
+        ) : coin.length > 0 ? (
           <div>
             <div className="content">
               <h1>{coin.name}</h1>
