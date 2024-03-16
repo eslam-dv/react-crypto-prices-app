@@ -35,6 +35,19 @@ section {
   color: var(--red);
 }
 
+.loading {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--purple);
+}
+
+.no-data {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
 @media screen and (max-width: 720px) {
   .hide-mobile {
     display: none;
