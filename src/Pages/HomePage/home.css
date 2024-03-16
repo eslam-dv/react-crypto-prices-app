@@ -1,0 +1,64 @@
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search input {
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid transparent;
+  width: 30%;
+  padding: 7px;
+}
+
+.search input:focus {
+  border: 2px solid var(--purple);
+}
+
+.heading,
+.coin-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 20px;
+  background-color: var(--light-black);
+  padding: 20px 15px;
+  border-radius: 8px;
+}
+
+.heading {
+  font-weight: 500;
+}
+
+.img-symbol p {
+  transition: color 0.3s ease-in-out;
+}
+
+.coin-row:hover .img-symbol p {
+  color: var(--purple);
+}
+
+.coin-field {
+  margin-left: -40px;
+}
+
+.coin-row {
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.coin-row:hover {
+  transform: scale(1.05);
+}
+
+.img-symbol {
+  display: flex;
+  align-items: center;
+}
+
+.img-symbol img {
+  height: 40px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
