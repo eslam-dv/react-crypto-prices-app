@@ -9,10 +9,9 @@ export default defineConfig({
       "/api": {
         target: "https://api.coingecko.com/api/v3/coins",
         changeOrigin: true,
-        secure: true,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
-  base: "/react-crypto-prices-app/",
+  base: "https://eslam-dv.github.io/react-crypto-prices-app/",
 });
