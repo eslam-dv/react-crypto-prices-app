@@ -12,9 +12,7 @@ export const Coin = () => {
   useEffect(() => {
     const getSingleCoin = async () => {
       try {
-        const response = await fetch(
-          `https://api.coingecko.com/api/v3/coins/${id}`
-        );
+        const response = await fetch(`/api/${id}`);
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
