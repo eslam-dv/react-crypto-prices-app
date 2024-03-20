@@ -13,7 +13,7 @@ export const Coin = () => {
     const getSingleCoin = async () => {
       try {
         const response = await fetch(
-          `https://cors-anywhere.herokuapp.com/https://api.coingecko.com/api/v3/coins/${id}`
+          `https://coingecko-proxy-nodejs.vercel.app/coin/${id}`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch data");
